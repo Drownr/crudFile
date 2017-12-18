@@ -48,6 +48,13 @@ function verificaForm(){
 }
 </script>
 <!-- Immissione dei dati -->
-Username:<input name="username" type="text"><br>
-Password:<input name="password" type="password"><br>
-<input type="button" value="Log In" onclick="verificaForm();"/>
+<header>Login</header>
+<label>Username <span>*</span></label>
+<input name="username" type="text"><br>
+<label>Password <span>*</span></label>
+<input name="password" type="password"><br>
+
+<input type="button" id="go" value="Log In" onclick="verificaForm();"/>
+
+
+<br><br>
