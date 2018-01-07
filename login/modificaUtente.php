@@ -48,6 +48,8 @@ function verifica(){
 
 <input type="hidden" name="vecchioNome" value="<?php echo $_POST["userTEMP"] ?>"/>
 <input type="hidden" name="vecchiaPassword" value="<?php echo $_POST["passwordTEMP"] ?>"/>
+
+<header>Modifica Utente</header><br>
 <table>
 	<tr><th>Username</th><th>Password</th><th>Admin</th></tr>
 	<tr>
@@ -55,6 +57,6 @@ function verifica(){
 		<td><input type="text" id="nuovaPassword" name="nuovaPassword" value="<?php echo $_POST["passwordTEMP"] ?>"/></td>
 		<td><input type="checkbox" id="admin" name="admin" <?php echo $check ?>/></td>
 	</tr>
-</table>
-<input type="button" value="Modifica!" onclick="verifica();"/><br><br>
-<input type='button' value='Torna indietro' onclick="cambiaStato(3)"/>
+</table><br><br>
+<input type="button" id="go" value="Modifica!" onclick="verifica();"/><br>
+<input type='button' id="go" value='Torna indietro' onclick="cambiaStato(3)"/><br><br>

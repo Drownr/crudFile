@@ -41,6 +41,8 @@ function verifica(){
 		cambiaStato(6);
 }
 </script>
+
+<header>Crea Utente</header><br>
 <table>
 	<tr><th>Username</th><th>Password</th><th>Admin</th></tr>
 	<tr>
@@ -48,6 +50,6 @@ function verifica(){
 		<td><input type="text" id="nuovaPassword" name="nuovaPassword"/></td>
 		<td><input type="checkbox" id="admin" name="admin"/></td>
 	</tr>
-</table>
-<input type="button" value="Crea!" onclick="verifica();"/><br><br>
-<input type='button' value='Torna indietro' onclick="cambiaStato(3)"/>
+</table><br><br>
+<input type="button" id="go" value="Crea!" onclick="verifica();"/><br>
+<input type='button' id="go" value='Torna indietro' onclick="cambiaStato(3)"/><br><br>

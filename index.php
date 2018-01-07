@@ -22,6 +22,10 @@ else
 <html>
 	<head>
 		<title> Log In </title>
+		
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="tabelle.css">
+		
 		<script>		
 			function cambiaStato(stato){
 				document.getElementById("stato").value = stato;
@@ -37,7 +41,7 @@ else
 			}
 		</script>
 	</head>
-	<body>
+	<body>		
 		<form action="" method="post" name="form">
 			<input type='hidden' id='stato' name='stato'/>
 			
